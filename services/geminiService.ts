@@ -94,7 +94,7 @@ export const solveMathProblem = async (
   }
 
   try {
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({apiKey});
 
     const parts: any[] = [];
     
