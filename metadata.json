@@ -1,0 +1,7 @@
+{
+  "name": "Solve AI",
+  "description": "An advanced AI-powered math solver featuring a scientific calculator, image equation recognition, and step-by-step solution explanations using Gemini 3 Pro.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

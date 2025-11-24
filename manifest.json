@@ -1,0 +1,42 @@
+
+{
+  "short_name": "Solve AI",
+  "name": "Solve AI: Math & Science Solver",
+  "description": "An advanced AI-powered math solver featuring a scientific calculator, image equation recognition, and step-by-step solution explanations.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "categories": ["education", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/4383/4383076.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/4383/4383076.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=600&h=1200",
+      "sizes": "600x1200",
+      "type": "image/jpg",
+      "form_factor": "narrow",
+      "label": "Scientific Calculator"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&q=80&w=1200&h=600",
+      "sizes": "1200x600",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "Graphing Mode"
+    }
+  ]
+}
