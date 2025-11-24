@@ -91,7 +91,7 @@ export const solveMathProblem = async (
   textInput: string,
   base64Image?: string
 ): Promise<{ text: string; graphData?: GraphData }> => {
-  if (!process.env.API_KEY) {
+  if (!apiKey) {
     throw new Error("API Key is missing. Please check your environment configuration.");
   }
 
