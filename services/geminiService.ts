@@ -85,6 +85,8 @@ const normalizeMathInput = (input: string): string => {
     .replace(/tan⁻¹/g, 'atan');
 };
 
+const apiKey = (import.meta as any).env.VITE_SOLVE_AI as string;
+
 export const solveMathProblem = async (
   textInput: string,
   base64Image?: string
