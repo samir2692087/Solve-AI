@@ -5,491 +5,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Solve AI</title>
   <style>
-    :root {
-      --bg-main: #020617;
-      --bg-card: #020617;
-      --bg-card-soft: #020617;
-      --accent: #6366f1;
-      --accent-soft: rgba(99, 102, 241, 0.16);
-      --accent-strong: #a855f7;
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
-      --border-subtle: #1f2933;
-      --danger: #f97316;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #0b1120 0, #020617 48%, #000 100%);
-      color: var(--text-main);
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f7;
+      color: #222;
       line-height: 1.6;
     }
-
-    .app-shell {
-      max-width: 960px;
-      margin: 0 auto;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      padding: 12px 10px 32px;
-    }
-
-    .app-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 10px;
-    }
-
-    .app-icon {
-      width: 32px;
-      height: 32px;
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 24px 20px 40px;
+      background: #ffffff;
       border-radius: 12px;
-      background: radial-gradient(circle at 30% 0, #a855f7 0, #6366f1 40%, #312e81 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #f9fafb;
-      font-weight: 700;
-      font-size: 18px;
-      box-shadow: 0 8px 24px rgba(88, 28, 135, 0.55);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     }
-
-    .app-title-block {
-      display: flex;
-      flex-direction: column;
+    h1, h2 {
+      color: #111827;
     }
-
-    .app-title {
-      font-weight: 600;
-      font-size: 1rem;
-      letter-spacing: 0.02em;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
     }
-
-    .app-subtitle {
-      font-size: 0.75rem;
-      color: var(--text-muted);
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
     }
-
-    .pill {
-      margin-left: auto;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(148, 163, 184, 0.25);
-      font-size: 0.7rem;
-      color: var(--text-muted);
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 1.3rem;
     }
-
-    .content-card {
-      margin-top: 8px;
-      background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.98));
-      border-radius: 18px;
-      border: 1px solid rgba(148, 163, 184, 0.2);
-      box-shadow:
-        0 20px 45px rgba(15, 23, 42, 0.9),
-        0 0 0 1px rgba(15, 23, 42, 0.8);
-      padding: 16px 14px 20px;
+    p {
+      margin: 0.4rem 0 0.6rem;
     }
-
-    .card-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .back-circle {
-      width: 26px;
-      height: 26px;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 14px;
-      border: 1px solid rgba(55, 65, 81, 0.9);
-      color: var(--text-muted);
-    }
-
-    .pp-title-block {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-
-    .pp-title {
-      font-size: 1rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: #22c55e;
-      box-shadow: 0 0 12px rgba(34, 197, 94, 0.8);
-    }
-
-    .updated-text {
-      font-size: 0.7rem;
-      color: var(--text-muted);
-    }
-
-    .section {
-      margin-top: 12px;
-      padding: 10px 10px 12px;
-      border-radius: 14px;
-      background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.16), transparent 55%),
-                  rgba(15, 23, 42, 0.96);
-      border: 1px solid rgba(55, 65, 81, 0.85);
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-
-    .section-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 8px;
-      background: rgba(37, 99, 235, 0.12);
-      border: 1px solid rgba(129, 140, 248, 0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      color: var(--accent-strong);
-    }
-
-    .section-title-text {
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    .section-body {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    .section-body p {
-      margin: 4px 0;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      padding: 2px 8px;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.35);
-      background: rgba(15, 23, 42, 0.9);
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    .badge-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-
     ul {
-      margin: 4px 0 4px 16px;
-      padding-left: 0;
+      margin: 0.3rem 0 0.8rem 1.2rem;
     }
-
     li {
-      margin: 3px 0;
+      margin: 0.2rem 0;
     }
-
     strong {
-      color: #e5e7eb;
       font-weight: 600;
     }
-
-    .alert {
-      margin-top: 12px;
-      padding: 10px 10px 10px;
-      border-radius: 14px;
-      border: 1px solid rgba(249, 115, 22, 0.75);
-      background: radial-gradient(circle at top left, rgba(248, 113, 22, 0.18), transparent 55%),
-                  rgba(15, 23, 42, 0.96);
-      font-size: 0.75rem;
-      color: #fed7aa;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-
-    .alert-icon {
-      width: 20px;
-      height: 20px;
-      border-radius: 999px;
-      background: rgba(248, 113, 22, 0.16);
-      border: 1px solid rgba(248, 113, 22, 0.75);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-    }
-
-    .footer-note {
-      margin-top: 12px;
-      font-size: 0.72rem;
-      color: var(--text-muted);
-      text-align: left;
-      padding: 0 4px;
-    }
-
     a {
-      color: var(--accent);
+      color: #2563eb;
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
-    @media (min-width: 600px) {
-      .content-card {
-        padding: 18px 18px 22px;
-      }
+    .footer-note {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
-  <div class="app-shell">
-    <header class="app-header">
-      <div class="app-icon">Σ</div>
-      <div class="app-title-block">
-        <div class="app-title">Solve AI</div>
-        <div class="app-subtitle">Smart Calculator &amp; AI Assistant</div>
-      </div>
-      <div class="pill">Privacy</div>
-    </header>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="subtitle">
+      For the mobile application <strong>Solve AI</strong><br />
+      Last Updated: 25 November 2025
+    </div>
 
-    <main class="content-card" role="main">
-      <div class="card-header">
-        <div class="back-circle">&#8592;</div>
-        <div class="pp-title-block">
-          <div class="pp-title">
-            Privacy Policy
-            <span class="dot"></span>
-          </div>
-          <div class="updated-text">Last updated: 25 November 2025</div>
-        </div>
-      </div>
+    <h2>1. Introduction</h2>
+    <p>
+      Solve AI (“we”, “our”, “us”) is a calculator and utility application that provides
+      scientific calculations, GST calculations, EMI/loan calculations, currency conversion,
+      unit conversion, age calculation, calculation history and AI-assisted problem solving
+      using text, voice, and images.
+    </p>
+    <p>
+      We are committed to protecting your privacy and handling any information we process in a
+      safe and transparent way.
+    </p>
 
-      <!-- 1. INTRODUCTION -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#128196;</div>
-          <div class="section-title-text">1. Introduction</div>
-        </div>
-        <div class="section-body">
-          <p>
-            Welcome to <strong>Solve AI</strong> (“we”, “our”, “us”). We value your privacy and
-            are committed to keeping your data secure and transparent.
-          </p>
-          <p>
-            Solve AI is a smart calculator and AI assistance application that helps you perform
-            mathematical calculations and get AI-generated explanations or answers.
-          </p>
-          <p>
-            By using the application, you agree to the practices described in this Privacy Policy.
-            If you do not agree, please discontinue use of the app.
-          </p>
-          <div class="badge">
-            <span class="badge-dot"></span>
-            No sign-up &amp; no personal account required
-          </div>
-        </div>
-      </section>
+    <h2>2. Information We Collect</h2>
+    <p>
+      Solve AI is designed to collect only the minimum information required for the app to
+      function. We do <strong>not</strong> require you to create an account or provide your name,
+      email address, phone number, or any similar personal details.
+    </p>
 
-      <!-- 2. INFORMATION COLLECTION & USAGE -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#128203;</div>
-          <div class="section-title-text">2. Information Collection &amp; Usage</div>
-        </div>
-        <div class="section-body">
-          <p>
-            Solve AI is designed to collect only the minimum information required to operate the
-            app. We do <strong>not</strong> ask you to create an account and we do <strong>not</strong> collect
-            personally identifiable information such as your name, address, or phone number.
-          </p>
+    <p><strong>a) Calculator, Converters &amp; Tools</strong></p>
+    <ul>
+      <li>
+        Any numbers or values you enter (for example, GST amounts, EMI values, units,
+        currencies, dates of birth) are processed only on your device to calculate results.
+      </li>
+      <li>
+        We do not store or upload this information to our own servers.
+      </li>
+    </ul>
 
-          <p><strong>a) Calculator Inputs</strong></p>
-          <ul>
-            <li>Numbers, formulas, and expressions you type are processed locally on your device.</li>
-            <li>We do not store or transmit your calculator history to our own servers.</li>
-          </ul>
+    <p><strong>b) AI Text Input</strong></p>
+    <ul>
+      <li>
+        When you type a question or problem into the AI solver, your text is sent securely to a
+        trusted third-party AI service provider for the sole purpose of generating a reply.
+      </li>
+      <li>
+        We do not store this text or link it to any personal identity.
+      </li>
+    </ul>
 
-          <p><strong>b) AI Query Inputs</strong></p>
-          <ul>
-            <li>
-              When you ask a question in the AI section, the text you enter is sent to an AI service
-              provider solely to generate a response for you.
-            </li>
-            <li>
-              We do not use these queries to build personal profiles, and we do not sell this data.
-            </li>
-          </ul>
+    <p><strong>c) Voice Input</strong></p>
+    <ul>
+      <li>
+        If you use voice input, your speech is converted to text using a speech-to-text engine.
+      </li>
+      <li>
+        Audio is processed temporarily for conversion and is not stored by us.
+      </li>
+      <li>
+        We do not collect personal identity information from voice input.
+      </li>
+    </ul>
 
-          <p><strong)c) Technical &amp; Diagnostic Data (Non-Personal)</strong></p>
-          <ul>
-            <li>App version and basic device information (e.g., device model, OS version).</li>
-            <li>Anonymous crash logs or performance data to help improve stability and fix bugs.</li>
-          </ul>
+    <p><strong>d) Image Input</strong></p>
+    <ul>
+      <li>
+        If you upload an image of a problem, the image is processed only to extract text or
+        relevant details needed to solve the problem.
+      </li>
+      <li>
+        Images are not stored by us, and are not used for identification, training, or
+        advertising purposes.
+      </li>
+    </ul>
 
-          <p>
-            All of this information is used only to provide and improve the app’s core features:
-            calculations, AI answers, and app reliability.
-          </p>
-        </div>
-      </section>
+    <p><strong>e) Technical &amp; Diagnostic Data (Non-Personal)</strong></p>
+    <ul>
+      <li>App version and basic device information (such as device model and OS version).</li>
+      <li>Anonymous crash logs and performance data to help us improve stability and fix bugs.</li>
+    </ul>
 
-      <!-- 3. AI PROCESSING & THIRD-PARTY SERVICES -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#129302;</div>
-          <div class="section-title-text">3. AI Responses &amp; Service Providers</div>
-        </div>
-        <div class="section-body">
-          <p>
-            To generate AI-based answers, Solve AI connects to a trusted artificial intelligence
-            service. Your question or prompt is processed by that service to return a helpful
-            response.
-          </p>
-          <ul>
-            <li>Your text is transmitted over an encrypted connection whenever possible.</li>
-            <li>
-              The data is processed only for generating a reply and is not used by us for marketing
-              or advertising.
-            </li>
-            <li>
-              We do not knowingly send any persistent identifiers (such as your name or email)
-              because the app does not collect this information.
-            </li>
-          </ul>
-          <p>
-            These third-party services may have their own privacy practices. We encourage you to
-            review their policies if you want more detail on how they handle data on their side.
-          </p>
-        </div>
-      </section>
+    <h2>3. Currency Conversion</h2>
+    <p>
+      The currency converter feature may use a third-party service to retrieve live exchange
+      rates. Only the currency values and codes (for example, USD to INR) required for
+      conversion are sent.
+    </p>
+    <p>
+      No personal identity information is shared with this service, and we do not use this data
+      to profile or track you.
+    </p>
 
-      <!-- 4. LOCAL STORAGE & PERSISTENCE -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#128190;</div>
-          <div class="section-title-text">4. Local Storage</div>
-        </div>
-        <div class="section-body">
-          <p>
-            In some cases, the app may store recent calculation history or simple preferences
-            (such as last used mode) directly on your device.
-          </p>
-          <ul>
-            <li>This data stays on your device and is not automatically uploaded to our servers.</li>
-            <li>You can clear app data from your system settings if you wish to remove it.</li>
-          </ul>
-        </div>
-      </section>
+    <h2>4. Local Storage &amp; History</h2>
+    <p>
+      Certain data, such as your calculation history, may be stored locally on your device so
+      that you can review past calculations.
+    </p>
+    <ul>
+      <li>This history is stored only on your device and is not uploaded to our servers.</li>
+      <li>
+        You can clear this data at any time by using the relevant options in your device or app
+        settings.
+      </li>
+    </ul>
 
-      <!-- 5. DATA SECURITY -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#128274;</div>
-          <div class="section-title-text">5. Data Security</div>
-        </div>
-        <div class="section-body">
-          <p>
-            We use reasonable technical and organizational measures to protect information handled
-            through the app.
-          </p>
-          <ul>
-            <li>Communication with AI services is made over secure connections where supported.</li>
-            <li>We collect only minimal, non-personal technical data needed for functionality.</li>
-            <li>We do not maintain large personal data stores on our own servers.</li>
-          </ul>
-        </div>
-      </section>
+    <h2>5. How We Use Information</h2>
+    <p>We use the information described above only to:</p>
+    <ul>
+      <li>Provide calculator and conversion results.</li>
+      <li>Generate AI-based answers from your questions.</li>
+      <li>Process voice and image inputs into usable text.</li>
+      <li>Improve app performance, reliability, and stability.</li>
+    </ul>
+    <p>We <strong>do not</strong>:</p>
+    <ul>
+      <li>Sell your data to third parties.</li>
+      <li>Use your data for advertising or marketing.</li>
+      <li>Build personal profiles or track you across other apps and services.</li>
+    </ul>
 
-      <!-- 6. IMPORTANT DISCLAIMER -->
-      <div class="alert">
-        <div class="alert-icon">&#9888;</div>
-        <div>
-          <strong>Important:</strong>
-          <p>
-            Please avoid entering highly sensitive information such as financial passwords,
-            full payment card numbers, or private medical records into the AI input. While your
-            data is processed securely, the app is intended for educational and general
-            assistance purposes only.
-          </p>
-        </div>
-      </div>
+    <h2>6. Children’s Privacy</h2>
+    <p>
+      Solve AI does not knowingly collect personal data from children. Because the app does not
+      require sign-up or personal identity information, it is designed to minimize the amount of
+      data collected from all users, including children.
+    </p>
 
-      <!-- 7. CHILDREN & POLICY CHANGES -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#128221;</div>
-          <div class="section-title-text">6. Children &amp; Policy Updates</div>
-        </div>
-        <div class="section-body">
-          <p><strong>a) Children’s Privacy</strong></p>
-          <p>
-            We do not knowingly collect personal data from children. Because we do not require
-            accounts or sign-ups, the app is designed to minimize personal data collection for
-            users of all ages.
-          </p>
-          <p><strong>b) Changes to This Policy</strong></p>
-          <p>
-            We may revise this Privacy Policy from time to time. When we do, we will update the
-            “Last updated” date at the top. Continued use of the app after any change means you
-            accept the updated policy.
-          </p>
-        </div>
-      </section>
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. If we make changes, we will update
+      the “Last Updated” date at the top of this page. We encourage you to review this
+      Privacy Policy periodically to stay informed about how we handle information.
+    </p>
 
-      <!-- 8. CONTACT -->
-      <section class="section">
-        <div class="section-header">
-          <div class="section-icon">&#9993;</div>
-          <div class="section-title-text">7. Contact Us</div>
-        </div>
-        <div class="section-body">
-          <p>
-            If you have any questions or concerns regarding this Privacy Policy or how Solve AI
-            handles data, please contact:
-          </p>
-          <p>
-            Email:
-            <a href="mailto:mohammadsamir2424@gmail.com">mohammadsamir2424@gmail.com</a>
-          </p>
-        </div>
-      </section>
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy or about how Solve AI
+      handles data, please contact us at:
+    </p>
+    <p>
+      Email:
+      <a href="mailto:mohammadsamir2424@gmail.com">mohammadsamir2424@gmail.com</a>
+    </p>
 
-      <div class="footer-note">
-        © 2025 Solve AI. All rights reserved.
-      </div>
-    </main>
+    <p class="footer-note">
+      By using the Solve AI application, you agree to this Privacy Policy. If you do not agree
+      with this Policy, please discontinue use of the app.
+    </p>
   </div>
 </body>
 </html>
